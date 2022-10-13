@@ -29,9 +29,18 @@ body {
   font-size: 14px;
 }
 
-ul {list-style: none;}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 /* логотип сайту */
+.flex-header {
+  display: flex;
+  align-items: center;
+}
 .logo {
   color: #000000;
   text-decoration: none;
@@ -45,14 +54,29 @@ ul {list-style: none;}
 }
 
 /* навігація сайту */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav-item {
+  margin-right: 50px;
+}
+.site-nav-item:last-child {
+  margin-right: 0px;
+}
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
   line-height: 1.1;
-  outline: 2px solid pink;
 }
+
 .site-nav-link:hover,
 .site-nav-link:focus 
 {
@@ -61,7 +85,21 @@ ul {list-style: none;}
 .current {
   color:var(--accent-color);
 }
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-item {
+  margin-right: 50px;
+}
+.contacts-item:last-child {
+  margin-right: 0px;
+}
 .nav-contacts {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -74,14 +112,21 @@ ul {list-style: none;}
 
 /* головний заголовок */
 .hero {
-background-color: var(--secondary-background-color);
+  margin-bottom: 94px;
+
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  outline: pink;
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 40px;
+
+
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -100,36 +145,97 @@ color: var(--secondary-background-color);
 .conteiner {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
+.benefits {
+  margin-bottom: 94px;
+  background-color: pink;
+}
+.benefits-flex { 
+  display: flex;
+}
+.benefits-item {
+  margin-right: 30px;
+}
+.benefits-item:last-child {
+  margin-right: 0px;
+}
 .benefits-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  
   font-weight: 700;
   line-height: 1.1;
   font-size: 14px;
 }
 .benefits-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   color: var(--secondary-text-color);
   line-height: 1.7;
 }
 /* чим ми займаємось */
+.content {
+  margin-bottom: 94px;
+  background-color: blanchedalmond;
+}
+
+.sect {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #F5F4FA;
+}
+.flex-sect {
+  display: flex;
+  text-align: center;
+}
+.flex-item {
+  margin-right: 30px;
+  width: 270px;
+}
+.flex-item:last-child {
+  margin-right: 0px;
+}
 .list {
+  margin-bottom: 50px;
+  margin-top: 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+.list-items {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  display: flex;
+}
+.list-item {
+  margin-right:  30px; 
+}
+.list-item:last-child {
+  margin-right: 0px;
 }
 .list-worker {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .list-position {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Футер */
@@ -194,4 +300,19 @@ color: var(--secondary-background-color);
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.8;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
+}
+.project-list-item:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+.project-list-item:nth-child(3n+3) {
+  margin-right: 0px;
 }

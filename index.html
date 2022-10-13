@@ -16,26 +16,24 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="flex-header conteiner">
+      <a href="./index.html" class="logo"><span class="icon">Web</span>Studio</a>
       <nav>
-        <a href="./index.html" class="logo"
-          ><span class="icon">Web</span>Studio</a
-        >
         <ul class="site-nav">
-          <li><a class="site-nav-link current" href="./index.html" >Студія</a></li>
-          <li>
+          <li class="site-nav-item"><a class="site-nav-link current" href="./index.html" >Студія</a></li>
+          <li class="site-nav-item">
             <a class="site-nav-link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li><a class="site-nav-link" href="./index.html">Контакти</a></li>
+          <li class="site-nav-item"><a class="site-nav-link" href="./index.html">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li>
+      <ul class="contacts">
+        <li class="contacts-item">
           <a class="nav-contacts" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="contacts-item">
           <a class="nav-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -47,31 +45,31 @@
           Замовити послугу
         </button>
       </section>
-      <div class="conteiner">
       <section class="benefits">
+      <div class="conteiner">
         <h2>Наші перваги</h2>
-        <ul>
-          <li>
+        <ul class="benefits-flex">
+          <li class="benefits-item">
             <h3 class="benefits-title">Увага до деталей</h3>
             <p class="benefits-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <h3 class="benefits-title">Пунктуальність</h3>
             <p class="benefits-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <h3 class="benefits-title">Планування</h3>
             <p class="benefits-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <h3 class="benefits-title">Сучасні технології</h3>
             <p class="benefits-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -79,26 +77,27 @@
             </p>
           </li>
         </ul>
-      </section>
       </div>
-      <section>
+      </section>
+      <section class="content">
+      <div class="conteiner">
         <h2 class="list">Чим ми займаємося</h2>
-        <ul>
-          <li>
+        <ul class="list-items">
+          <li class="list-item">
             <img
               src="./images/box1.jpg"
               alt="робочий стіл з компютером"
               width="370"
             />
           </li>
-          <li>
+          <li class="list-item">
             <img
               src="./images/box2.jpg"
               alt="робоча зона з компютером і телефоном"
               width="370"
             />
           </li>
-          <li>
+          <li class="list-item">
             <img
               src="./images/box3.jpg"
               alt="робоча зона з компютером і планшетом"
@@ -106,11 +105,13 @@
             />
           </li>
         </ul>
+      </div>
       </section>
-      <section>
+      <section class="sect">
+      <div class="conteiner">
         <h2 class="list">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="flex-sect">
+          <li class="flex-item">
             <img
               src="./images/photo1.jpg"
               alt="фото усміхненого чоловіка в окулярах"
@@ -119,7 +120,7 @@
             <h3 class="list-worker">Ігор Дем'яненко</h3>
             <p class="list-position">Product Designer</p>
           </li>
-          <li>
+          <li class="flex-item">
             <img
               src="./images/photo2.jpg"
               alt="фото жінки в окулярах"
@@ -128,7 +129,7 @@
             <h3 class="list-worker">Ольга Рєпіна</h3>
             <p class="list-position">Frontend Developer</p>
           </li>
-          <li>
+          <li class="flex-item">
             <img
               src="./images/photo3.jpg"
               alt="фото усміхненого чоловіка"
@@ -137,7 +138,7 @@
             <h3 class="list-worker">Микола Тарасов</h3>
             <p class="list-position">Marketing</p>
           </li>
-          <li>
+          <li class="flex-item">
             <img
               src="./images/photo4.jpg"
               alt="фото чоловіка в окулярах"
@@ -147,6 +148,7 @@
             <p class="list-position">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
