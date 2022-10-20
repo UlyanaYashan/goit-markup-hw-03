@@ -151,7 +151,9 @@ ul {
 
 /* головний заголовок */
 .hero {
-  padding-top: 200px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
   padding-bottom: 200px;
 
   background-color: var(--secondary-background-color);
@@ -165,8 +167,8 @@ h1 {
   margin-top: 0px;
   margin-bottom: 30px;
   width: 696px;
-  margin-right: 232px;
-  margin-left: 232px;
+  margin-right: auto;
+  margin-left:auto;
 
   color: var(--hero-text-color);
   font-weight: 900;
@@ -177,11 +179,16 @@ h1 {
   letter-spacing: 0.06em;
 }
 .hero-btn {
-  display: inline-block;
-  min-width: 216px;
-  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 216px;
+  height: 50px;
   border-radius: 4px;
-  
+  margin-left: auto;
+  margin-right: auto;
+
+
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   border-color: transparent;
@@ -193,7 +200,8 @@ h1 {
   font-weight: 700;
 }
 .hero-btn:hover, .hero-btn:focus {
-color: var(--secondary-background-color);
+background: #188CE8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
 }
 
 .benefits-flex { 
@@ -303,9 +311,7 @@ color: var(--secondary-background-color);
   
   background-color: var(--secondary-background-color);
 }
-.address {
-  margin-top: 20px;
-}
+
 .address-item {
   margin-bottom: 9px;
 }
@@ -314,6 +320,9 @@ color: var(--secondary-background-color);
 }
 .logo-footer {
   color: var(--hero-text-color);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
 }
 .footer-address {
   color: var(--hero-text-color);
